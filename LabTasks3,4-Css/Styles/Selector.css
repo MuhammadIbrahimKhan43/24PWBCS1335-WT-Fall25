@@ -1,0 +1,45 @@
+*{
+font-family: Arial, sans-serif;
+}
+
+#heading{
+color: darkblue;
+text-align: center;
+}
+
+.para{
+font-size:18px;
+color:#333;
+}
+
+.box{
+background-color:lightgray;
+padding:10px;
+margin-top:10px;
+}
+
+a:hover{
+color:red;
+}
+
+li:first-child{
+color:green;
+}
+
+li:last-child{
+color:blue;
+}
+
+li:nth-child(2){
+color:orange;
+}
+
+p::first-letter{
+font-size:28px;
+font-weight:bold;
+}
+
+p::after{
+content:" ✔";
+color:green;
+}
