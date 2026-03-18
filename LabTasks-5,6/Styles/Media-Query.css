@@ -1,0 +1,39 @@
+body {
+    font-family: Arial;
+    padding: 20px;
+}
+
+h1 {
+    font-size: clamp(20px, 5vw, 40px);
+}
+
+.text {
+    font-size: clamp(14px, 2vw, 20px);
+}
+
+.container {
+    display: flex;
+    gap: 10px;
+}
+
+.box {
+    flex: 1;
+    padding: 20px;
+    background-color: lightblue;
+    text-align: center;
+}
+
+@media (max-width: 1024px) {
+    .box {
+        background-color: lightgreen;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .box {
+        background-color: lightcoral;
+    }
+}

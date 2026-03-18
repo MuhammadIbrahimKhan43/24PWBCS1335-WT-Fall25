@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning Challenge</title>
+    <link rel="stylesheet" href="../Styles/Position.css">
+</head>
+<body>
+
+<header class="fixed-header">
+    Fixed Header
+</header>
+
+<div class="container">
+    <aside class="sticky-sidebar">
+        Sticky Sidebar
+    </aside>
+
+    <main class="main-content">
+        <h2>Content Area</h2>
+        <p>This is the main content. Scroll down to see sticky sidebar effect.</p>
+
+        <button id="openModal">Open Modal</button>
+    </main>
+</div>
+
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span id="closeModal">&times;</span>
+        <h2>Modal Dialog</h2>
+        <p>This modal uses absolute positioning. On mobile it becomes full screen.</p>
+    </div>
+</div>
+
+<div class="overlap1">Box 1</div>
+<div class="overlap2">Box 2</div>
+
+<script>
+    const modal = document.getElementById('modal');
+    const btn = document.getElementById('openModal');
+    const span = document.getElementById('closeModal');
+
+    btn.onclick = () => { modal.style.display = 'block'; }
+    span.onclick = () => { modal.style.display = 'none'; }
+    window.onclick = e => { if(e.target == modal) modal.style.display = 'none'; }
+</script>
+
+</body>
+</html>

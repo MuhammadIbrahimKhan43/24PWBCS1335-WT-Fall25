@@ -1,0 +1,37 @@
+body {
+    font-family: Arial;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    overflow: hidden; 
+}
+
+.sidebar {
+    float: left;
+    width: 25%;
+    background-color: #f0f0f0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.main {
+    float: left;
+    width: 70%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.main img {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .sidebar, .main {
+        float: none;
+        width: 100%;
+    }
+}

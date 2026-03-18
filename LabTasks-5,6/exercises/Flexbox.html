@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Navigation</title>
+    <link rel="stylesheet" href="../Styles/Flexbox.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="logo">My Website</div>
+    <nav class="nav">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a>
+                <ul class="dropdown">
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="hamburger">&#9776;</div>
+</header>
+
+<aside class="sidebar">
+    <ul>
+        <li><a href="#">Sidebar 1</a></li>
+        <li><a href="#">Sidebar 2</a></li>
+        <li><a href="#">Sidebar 3</a></li>
+    </ul>
+</aside>
+
+<main class="main-content">
+    <h2>Welcome!</h2>
+    <p>This is a sample page demonstrating a Flexbox navigation system.</p>
+</main>
+
+<script>
+const hamburger = document.querySelector('.hamburger');
+const nav = document.querySelector('.nav ul');
+
+hamburger.addEventListener('click', () => {
+    nav.classList.toggle('show');
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+body {
+    font-family: Arial;
+    padding: 20px;
+}
+
+.box {
+    padding: 20px;
+    margin-bottom: 10px;
+    background: lightblue;
+}
+
+.hidden-mobile { display: block; }
+.hidden-tablet { display: block; }
+
+.text-center-lg { text-align: left; }
+
+.flex-row { display: flex; gap: 10px; }
+.flex-column-sm { flex-direction: row; }
+.item { background: #ddd; padding: 10px; }
+
+@media (max-width: 768px) {
+    .hidden-mobile { display: none; }
+    .flex-column-sm { flex-direction: column; }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .hidden-tablet { display: none; }
+}
+
+@media (min-width: 1024px) {
+    .text-center-lg { text-align: center; }
+}

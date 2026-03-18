@@ -1,0 +1,102 @@
+body {
+    font-family: Arial;
+    margin: 0;
+}
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    z-index: 10;
+}
+
+.container {
+    display: flex;
+    margin-top: 60px;
+}
+
+.sticky-sidebar {
+    position: sticky;
+    top: 60px;
+    width: 25%;
+    background-color: #f0f0f0;
+    padding: 10px;
+    height: 200px;
+}
+
+.main-content {
+    width: 70%;
+    padding: 10px;
+}
+
+.modal {
+    display: none;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    width: 400px;
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+    padding: 20px;
+    z-index: 20;
+}
+
+.modal-content {
+    position: relative;
+}
+
+#closeModal {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.overlap1, .overlap2 {
+    width: 100px;
+    height: 100px;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    position: absolute;
+}
+
+.overlap1 {
+    background-color: red;
+    top: 500px;
+    left: 50px;
+    z-index: 5;
+}
+
+.overlap2 {
+    background-color: blue;
+    top: 520px;
+    left: 80px;
+    z-index: 15;
+}
+
+@media (max-width: 768px) {
+    .fixed-header {
+        position: static;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .sticky-sidebar, .main-content {
+        width: 100%;
+    }
+
+    .modal {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+    }
+}

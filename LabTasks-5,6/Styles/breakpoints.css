@@ -1,0 +1,40 @@
+body {
+    font-family: Arial;
+    padding: 20px;
+}
+
+.box {
+    background: lightblue;
+    padding: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 16px;
+}
+
+@media (min-width: 768px) {
+    .box {
+        background: lightgreen;
+        font-size: 18px;
+    }
+}
+@media (min-width: 1024px) {
+    .box {
+        background: orange;
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .box {
+        background: pink;
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .box {
+        background: purple;
+        color: white;
+        font-size: 24px;
+    }
+}

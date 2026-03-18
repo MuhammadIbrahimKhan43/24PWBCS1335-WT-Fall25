@@ -1,0 +1,49 @@
+body {
+    font-family: Arial;
+    margin: 0;
+}
+
+header {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.hero {
+    text-align: center;
+    padding: 20px;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+
+.box {
+    background: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+button {
+    padding: 10px;
+}
+
+@media (min-width: 768px) {
+    .features {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 1024px) {
+    .hero {
+        padding: 50px;
+    }
+
+    .box {
+        font-size: 20px;
+    }
+}
